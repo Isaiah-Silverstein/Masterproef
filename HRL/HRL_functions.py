@@ -1,8 +1,8 @@
 import numpy as np
-import random
-import time
+import random, os, time
 import matplotlib.pyplot as plt
 
+print(os.getcwd())
 # Defining the codes
 floor = 0
 wall = 1
@@ -14,7 +14,7 @@ door = 4
 """ STRUCTURAL PARAMETERS """
 
 # Choose the environment
-env = 'Env_5.txt'
+env = 'HRL/Env_5.txt'
 # If set to True then the agent can move diagonally
 diagonal_movement = True
 
