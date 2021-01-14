@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#PBS -N sync_parameter_expl     ## job name
+#PBS -l nodes=1::ppn=20         ## 2 cores
+#PBS -l walltime=40:00:00	    ## Max about 2 days time
+#PBS -m abe                     ## send mail
+
+# load relevant module
+module load Python/3.6.6-intel-2018b
+
+#cd and run functions script
+cd $HOME_DIR
+cd Thesis/Sim3
+python flatmap_justsync.py
+
